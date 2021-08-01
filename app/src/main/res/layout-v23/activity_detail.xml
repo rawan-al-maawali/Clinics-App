@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity"
+    android:background="@color/white"
+    android:padding="20dp">
+
+
+    <TextView
+        android:id="@+id/tvClinicNameDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clinic_name"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/purple_200"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/ivClinicImageDetail"
+        />
+
+    <!--<TextView
+        android:id="@+id/tvBookGenreDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/book_genre"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:textColor="@color/teal_200"
+        android:layout_below="@id/tvBookNameDetail"
+        android:layout_alignParentLeft="true"
+        android:layout_toStartOf="@id/ivBookImageNameDetail"
+
+        /> -->
+    <TextView
+        android:id="@+id/tvClinicLocationTextDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/location_of_clinic"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_below="@id/tvClinicNameDetail"
+        android:paddingTop="10dp"
+
+
+        />
+
+   <!--  <TextView
+        android:id="@+id/tvRatingTextDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rating"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingTop="8dp"
+        android:textColor="@color/white"
+        android:layout_below="@id/tvYearTextDetail"
+      /> -->
+    <TextView
+        android:id="@+id/tvClinicTypeTextDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/type"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:paddingTop="8dp"
+        android:paddingRight="5sp"
+        android:layout_below="@id/tvClinicLocationDetail"
+
+        />
+
+    <ScrollView
+        android:id="@+id/svClinicDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_above="@id/fabSearchCategory"
+        android:layout_below="@id/ivClinicImageDetail"
+        android:layout_marginTop="20dp"
+        android:scrollIndicators="right"
+       >
+
+        <TextView
+            android:id="@+id/tvDescriptionDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="@string/_description"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+
+
+            />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tvPriceTextDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/consultation_price"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_above="@id/tvNoOfSessionsDetail"
+        android:paddingTop="15dp"
+        />
+
+    <TextView
+        android:id="@+id/tvPriceDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_8_00"
+        android:textSize="20sp"
+        android:textColor="@color/purple_700"
+        android:paddingLeft="10dp"
+        android:layout_toEndOf="@id/tvPriceTextDetail"
+        android:layout_above="@+id/tvNoOfSessionsDetail"
+         />
+    <TextView
+        android:id="@+id/tvNoOfSessionsDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="@string/no_of_sessions"
+        android:textColor="@color/black"
+        android:layout_above="@id/tvSessionSubTotalValueDetail"
+        />
+    <Spinner
+        android:id="@+id/spinnerNoOfSessionsDetail"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dp"
+
+        android:layout_above="@id/tvSessionSubTotalValueDetail"
+        android:layout_toEndOf="@id/tvNoOfSessionsDetail"
+
+    />
+    <TextView
+        android:id="@+id/tvSubTotalLabelDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sub_total"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_above="@id/btnBookSessionDetail"
+        />
+
+    <TextView
+        android:id="@+id/tvSessionSubTotalValueDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_15_5_omr"
+        android:textSize="18sp"
+        android:textColor="@color/purple_700"
+        android:layout_marginStart="10dp"
+        android:layout_above="@id/btnBookSessionDetail"
+        android:layout_toEndOf="@id/tvSubTotalLabelDetail"
+
+        />
+
+    <Button
+        android:id="@+id/btnBookSessionDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/book_session"
+        android:layout_alignParentBottom="true"
+        android:onClick="bookSession"
+        />
+
+    <TextView
+        android:id="@+id/tvClinicLocationDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/muscat"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:textColor="@color/grey"
+        android:layout_below="@id/tvClinicLocationTextDetail"
+
+       />
+    <TextView
+        android:id="@+id/tvClinicTypeDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dermatology"
+        android:textSize="16sp"
+
+        android:padding="10dp"
+        android:textColor="@color/grey"
+        android:layout_below="@id/tvClinicLocationDetail"
+        android:layout_toEndOf="@id/tvClinicTypeTextDetail"
+        android:layout_toStartOf="@id/ivClinicImageDetail"
+
+        />
+
+<!--
+    <ImageView
+        android:id="@+id/line_split"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvBookAuthorDetail"
+
+        android:layout_marginTop="-20dp"
+        android:src="@drawable/line" />
+
+    <ImageView
+        android:id="@+id/line_split2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/fabSearchCategory"
+        android:layout_marginTop="-20dp"
+        android:layout_marginBottom="-20dp"
+        android:src="@drawable/line" /> -->
+
+    <ImageView
+        android:id="@+id/ivClinicImageDetail"
+        android:layout_width="120dp"
+        android:layout_height="170dp"
+        android:src="@drawable/kaya"
+
+
+        android:layout_alignParentRight="true"
+
+
+        />
+   <!-- <ImageView
+        android:id="@+id/ivBookRatingDetail"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:paddingLeft="5dp"
+        android:src="@drawable/four_half"
+        android:layout_toRightOf="@id/tvRatingTextDetail"
+        android:layout_below="@id/tvBookPublishedYearDetail"
+        android:layout_toEndOf="@id/tvRatingTextDetail"
+        android:layout_toStartOf="@id/ivBookImageNameDetail"
+         /> -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabShowOnMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="showOnMap"
+        android:src="@drawable/location_icon"
+        />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabShowOnGoogleMaps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/fabShowOnMap"
+        android:layout_alignParentEnd="true"
+        android:onClick="showOnGoogleMaps"
+        android:src="@drawable/ic_baseline_map_24"
+        />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabNavigate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/fabShowOnGoogleMaps"
+        android:layout_alignParentEnd="true"
+        android:onClick="navigate"
+        android:src="@drawable/ic_baseline_navigation_24"
+        />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabSearchCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/fabNavigateStreetView"
+        android:layout_alignParentEnd="true"
+        android:onClick="searchCategory"
+        android:src="@drawable/ic_baseline_location_searching_24"
+        />
+    <TextView
+        android:id="@+id/tvSearchFor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_above="@id/fabNavigateStreetView"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:text="@string/searchfor"
+        />
+    <Spinner
+        android:id="@+id/spSearchFor"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_toEndOf="@id/tvSearchFor"
+        android:layout_marginLeft="10dp"
+        android:layout_above="@id/fabNavigateStreetView"
+        />
+
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabNavigateStreetView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/fabNavigate"
+        android:layout_alignParentEnd="true"
+        android:onClick="displayPanorama"
+        android:src="@drawable/ic_baseline_panorama_24"
+        />
+</RelativeLayout>

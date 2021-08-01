@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    tools:context=".AboutUs">
+
+
+    <TextView
+        android:id="@+id/aboutusdesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/our_application_is_one_of_the_first_apps_that_collects_local_clinics_in_oman_helping_the_customer_to_communicate_easier_with_the_any_clinic"
+        android:layout_centerInParent="true"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:justificationMode="inter_word"
+        android:padding="20sp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/aboutusdesc"
+
+        android:onClick="goback"
+        />
+
+
+
+</RelativeLayout>

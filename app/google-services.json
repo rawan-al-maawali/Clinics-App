@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "162281983081",
+    "project_id": "favoritebooklist-38c02",
+    "storage_bucket": "favoritebooklist-38c02.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:162281983081:android:528338c5ccd2181cfca6f8",
+        "android_client_info": {
+          "package_name": "com.example.favoritelist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "162281983081-cp1nnm6prr870838dshasu3gqdvd4i4n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgVj65vTSiIncrbLTPCh4bIQFOMabeZyA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "162281983081-cp1nnm6prr870838dshasu3gqdvd4i4n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
